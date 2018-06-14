@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibersap xmlns="urn:hibersap:hibersap-configuration:1.1">
+    <session-manager name="A12">
+        <properties>
+            <property name="jco.client.client" value="800" />
+            <property name="jco.client.user" value="xxx" />
+            <property name="jco.client.passwd" value="xxx" />
+            <property name="jco.client.lang" value="en" />
+            <property name="jco.client.ashost" value="xxx" />
+            <property name="jco.client.sysnr" value="xx" />
+            <property name="jco.destination.pool_capacity" value="x" />
+        </properties>
+        <annotated-classes>
+            <annotated-class>hiberSAPExample.Flight.FlightListBapi</annotated-class>
+            <annotated-class>hiberSAPExample.Vendor.VendorDetailBapi</annotated-class>
+            <annotated-class>hiberSAPExample.Vendor.VendorListBapi</annotated-class>
+            <annotated-class>hiberSAPExample.Invoice.InvoiceListBapi</annotated-class>
+            <annotated-class>hiberSAPExample.Invoice.InvoiceDetailBapi</annotated-class>
+        </annotated-classes>
+    </session-manager>
+</hibersap>

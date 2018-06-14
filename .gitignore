@@ -1,0 +1,8 @@
+src/main/resources/META-INF/hibersap.xml
+*/target/*
+*/target/**
+src/target/*
+*.iws
+*.trc
+*.ipr
+target
