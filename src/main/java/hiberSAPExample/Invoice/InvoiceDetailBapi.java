@@ -1,6 +1,8 @@
 package hiberSAPExample.Invoice;
 
-import hiberSAPExample.utilities.BapiAddress;
+import hiberSAPExample.Invoice.bapiStructure.BSInvoiceDetailHeader;
+import hiberSAPExample.Invoice.bapiStructure.BSItemData;
+import hiberSAPExample.utilities.BSAddress;
 import hiberSAPExample.utilities.BapiTaxData;
 import org.hibersap.annotations.*;
 
@@ -24,15 +26,15 @@ public class InvoiceDetailBapi {
 
     @Export
     @Parameter(value = "HEADERDATA", type = ParameterType.STRUCTURE)
-    private BapiInvoiceDetailHeader headerData;
+    private BSInvoiceDetailHeader headerData;
 
     @Export
     @Parameter(value = "ADDRESSDATA", type = ParameterType.STRUCTURE)
-    private BapiAddress address;
+    private BSAddress address;
 
     @Table
     @Parameter("ITEMDATA")
-    private List<BapiItemData> itemData;
+    private List<BSItemData> itemData;
 
     @Table
     @Parameter("TAXDATA")

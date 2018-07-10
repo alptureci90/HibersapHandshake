@@ -1,4 +1,4 @@
-package hiberSAPExample.Invoice;
+package hiberSAPExample.Invoice.bapiStructure;
 
 import org.hibersap.annotations.BapiStructure;
 import org.hibersap.annotations.Parameter;
@@ -6,7 +6,7 @@ import org.hibersap.annotations.Parameter;
 import java.math.BigDecimal;
 
 @BapiStructure
-public class BapiItemData {
+public class BSItemData {
 
     @Parameter("INVOIC")
     private String invoiceId;

@@ -24,5 +24,11 @@ public class Vendor {
         return name;
     }
 
+    public void setVendor(String vendor) {
+        this.vendor = vendor;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 }

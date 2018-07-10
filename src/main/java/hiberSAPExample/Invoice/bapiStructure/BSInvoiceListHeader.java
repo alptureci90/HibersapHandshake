@@ -1,4 +1,4 @@
-package hiberSAPExample.Invoice;
+package hiberSAPExample.Invoice.bapiStructure;
 
 import org.hibersap.annotations.BapiStructure;
 import org.hibersap.annotations.Parameter;
@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @BapiStructure
-public class BapiInvoiceListHeader {
+public class BSInvoiceListHeader {
 
     @Parameter("INV_DOC_NO")
     private String invoiceDocNum;

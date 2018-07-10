@@ -1,6 +1,7 @@
 package hiberSAPExample.Invoice;
 
 
+import hiberSAPExample.Invoice.bapiStructure.BSInvoiceListHeader;
 import org.hibersap.annotations.Bapi;
 import org.hibersap.annotations.Import;
 import org.hibersap.annotations.Parameter;
@@ -54,7 +55,7 @@ public class InvoiceListBapi {
 
     @Table
     @Parameter("HEADERLIST")
-    private  List<BapiInvoiceListHeader> headerList;
+    private  List<BSInvoiceListHeader> headerList;
 
     /*@Table
     @Parameter("RETURN")
@@ -96,7 +97,7 @@ public class InvoiceListBapi {
         return refDoc;
     }*/
 
-    public List<BapiInvoiceListHeader> getHeaderList() {
+    public List<BSInvoiceListHeader> getHeaderList() {
         return headerList;
     }
 

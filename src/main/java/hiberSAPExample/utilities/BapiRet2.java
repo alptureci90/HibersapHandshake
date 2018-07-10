@@ -3,6 +3,8 @@ package hiberSAPExample.utilities;
 import org.hibersap.annotations.*;
 import org.hibersap.conversion.CharConverter;
 
+import java.lang.reflect.Field;
+
 @BapiStructure
 public class BapiRet2 {
     @Parameter("TYPE")
@@ -25,4 +27,17 @@ public class BapiRet2 {
     public String getNumber() { return this.number; }
 
     public String getMessage() { return this.message; }
+
+    @Override
+    public String toString(){
+        StringBuffer sb  = new StringBuffer();
+
+        sb.append("\nReturn Fields:");
+        sb.append("\nType: " + getType());
+        sb.append("\nId: " + getId());
+        sb.append("\nNumber: " + getNumber());
+        sb.append("\nMessage: " + getMessage());
+
+        return sb.toString();
+    }
 }

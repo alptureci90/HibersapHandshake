@@ -1,5 +1,6 @@
 package hiberSAPExample.Vendor;
 
+import com.sap.conn.jco.JCoException;
 import hiberSAPExample.sapSessionManager.*;
 import org.hibersap.session.Session;
 import org.hibersap.session.SessionManager;
@@ -10,9 +11,29 @@ public class MainVendorAppTest {
 
         MainVendorAppTest test = new MainVendorAppTest();
         //test.getVendorDetail();
-        test.getVendorList();
+        //test.getVendorList();
+        test.postVendor();
 
+    }
 
+    public void postVendor(){
+        Vendor vendor = new Vendor();
+        vendor.setName("New Vendor");
+        vendor.setVendor("Vendor10100008");
+
+        SessionManager sessionManager = SAPSessionManager.createSessionManager();
+        Session session = sessionManager.openSession();
+
+        try{
+            VendorCreateBapi vendorCreate = new VendorCreateBapi();
+            session.execute(vendorCreate);
+            showVendorCreateOutput(vendorCreate);
+
+        } catch (Exception e){
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
     }
 
     public void getVendorList(){
@@ -47,6 +68,12 @@ public class MainVendorAppTest {
     }
 
     public void showVendorList(VendorListBapi vendorList){
+
+    }
+
+    public void showVendorCreateOutput(VendorCreateBapi newVendor){
+
+        System.out.println(newVendor.toString());
 
     }
 

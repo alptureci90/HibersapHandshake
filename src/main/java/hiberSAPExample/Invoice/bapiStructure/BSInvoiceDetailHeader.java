@@ -1,4 +1,4 @@
-package hiberSAPExample.Invoice;
+package hiberSAPExample.Invoice.bapiStructure;
 
 import org.hibersap.annotations.BapiStructure;
 import org.hibersap.annotations.Parameter;
@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @BapiStructure
-public class BapiInvoiceDetailHeader {
+public class BSInvoiceDetailHeader {
 
     @Parameter("INV_DOC_NO")
     private String invDocNum;
@@ -463,5 +463,265 @@ public class BapiInvoiceDetailHeader {
 
     public String getJ() {
         return j;
+    }
+
+    public void setInvDocNum(String invDocNum) {
+        this.invDocNum = invDocNum;
+    }
+
+    public void setFiscal(String fiscal) {
+        this.fiscal = fiscal;
+    }
+
+    public void setI(String i) {
+        this.i = i;
+    }
+
+    public void setDoc(String doc) {
+        this.doc = doc;
+    }
+
+    public void setDocDate(Date docDate) {
+        this.docDate = docDate;
+    }
+
+    public void setPstngDate(Date pstngDate) {
+        this.pstngDate = pstngDate;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setRefDocNum(String refDocNum) {
+        this.refDocNum = refDocNum;
+    }
+
+    public void setComp(String comp) {
+        this.comp = comp;
+    }
+
+    public void setDiffInv(String diffInv) {
+        this.diffInv = diffInv;
+    }
+
+    public void setCurre(String curre) {
+        this.curre = curre;
+    }
+
+    public void setCur(String cur) {
+        this.cur = cur;
+    }
+
+    public void setExchRate(BigDecimal exchRate) {
+        this.exchRate = exchRate;
+    }
+
+    public void setExchRateV(BigDecimal exchRateV) {
+        this.exchRateV = exchRateV;
+    }
+
+    public void setGrossAmnt(BigDecimal grossAmnt) {
+        this.grossAmnt = grossAmnt;
+    }
+
+    public void setC(String c) {
+        this.c = c;
+    }
+
+    public void setPmnt(String pmnt) {
+        this.pmnt = pmnt;
+    }
+
+    public void setBlineDate(Date blineDate) {
+        this.blineDate = blineDate;
+    }
+
+    public void setDsct(String dsct) {
+        this.dsct = dsct;
+    }
+
+    public void setDsct2(String dsct2) {
+        this.dsct2 = dsct2;
+    }
+
+    public void setNett(String nett) {
+        this.nett = nett;
+    }
+
+    public void setDsctP(String dsctP) {
+        this.dsctP = dsctP;
+    }
+
+    public void setDsctP2(String dsctP2) {
+        this.dsctP2 = dsctP2;
+    }
+
+    public void setI2(String i2) {
+        this.i2 = i2;
+    }
+
+    public void setHeaderText(String headerText) {
+        this.headerText = headerText;
+    }
+
+    public void setP(String p) {
+        this.p = p;
+    }
+
+    public void setDelCosts(BigDecimal delCosts) {
+        this.delCosts = delCosts;
+    }
+
+    public void setDe(String de) {
+        this.de = de;
+    }
+
+    public void setDelCostsTaxJ(String delCostsTaxJ) {
+        this.delCostsTaxJ = delCostsTaxJ;
+    }
+
+    public void setPersonExt(String personExt) {
+        this.personExt = personExt;
+    }
+
+    public void setEntryDate(Date entryDate) {
+        this.entryDate = entryDate;
+    }
+
+    public void setEntryTime(String entryTime) {
+        this.entryTime = entryTime;
+    }
+
+    public void setDiscnt(BigDecimal discnt) {
+        this.discnt = discnt;
+    }
+
+    public void setSapr(String sapr) {
+        this.sapr = sapr;
+    }
+
+    public void setLogSystem(String logSystem) {
+        this.logSystem = logSystem;
+    }
+
+    public void setReversalD(String reversalD) {
+        this.reversalD = reversalD;
+    }
+
+    public void setReve(String reve) {
+        this.reve = reve;
+    }
+
+    public void setAutInvRed(BigDecimal autInvRed) {
+        this.autInvRed = autInvRed;
+    }
+
+    public void setTaxInvRed(BigDecimal taxInvRed) {
+        this.taxInvRed = taxInvRed;
+    }
+
+    public void setVendError(BigDecimal vendError) {
+        this.vendError = vendError;
+    }
+
+    public void setTaxError(BigDecimal taxError) {
+        this.taxError = taxError;
+    }
+
+    public void setP2(String p2) {
+        this.p2 = p2;
+    }
+
+    public void setPm(String pm) {
+        this.pm = pm;
+    }
+
+    public void setI3(String i3) {
+        this.i3 = i3;
+    }
+
+    public void setScb(String scb) {
+        this.scb = scb;
+    }
+
+    public void setSup(String sup) {
+        this.sup = sup;
+    }
+
+    public void setB(String b) {
+        this.b = b;
+    }
+
+    public void setRefDocNumLong(String refDocNumLong) {
+        this.refDocNumLong = refDocNumLong;
+    }
+
+    public void setDsctAmount(BigDecimal dsctAmount) {
+        this.dsctAmount = dsctAmount;
+    }
+
+    public void setPo(String po) {
+        this.po = po;
+    }
+
+    public void setPoRefNum(String poRefNum) {
+        this.poRefNum = poRefNum;
+    }
+
+    public void setPayeePaye(String payeePaye) {
+        this.payeePaye = payeePaye;
+    }
+
+    public void setPart(String part) {
+        this.part = part;
+    }
+
+    public void setHouse(String house) {
+        this.house = house;
+    }
+
+    public void setAllocNum(String allocNum) {
+        this.allocNum = allocNum;
+    }
+
+    public void setPaymyref(String paymyref) {
+        this.paymyref = paymyref;
+    }
+
+    public void setInvRefNum(String invRefNum) {
+        this.invRefNum = invRefNum;
+    }
+
+    public void setInv(String inv) {
+        this.inv = inv;
+    }
+
+    public void setInvRecDate(String invRecDate) {
+        this.invRecDate = invRecDate;
+    }
+
+    public void setPl(String pl) {
+        this.pl = pl;
+    }
+
+    public void setPlanningDate(String planningDate) {
+        this.planningDate = planningDate;
+    }
+
+    public void setF(String f) {
+        this.f = f;
+    }
+
+    public void setBus(String bus) {
+        this.bus = bus;
+    }
+
+    public void setItemText(String itemText) {
+        this.itemText = itemText;
+    }
+
+    public void setJ(String j) {
+        this.j = j;
     }
 }
