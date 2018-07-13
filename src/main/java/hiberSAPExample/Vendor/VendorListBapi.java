@@ -1,12 +1,13 @@
 package hiberSAPExample.Vendor;
 
+import hiberSAPExample.Bapi.SuperBapi;
 import hiberSAPExample.utilities.BapiRet2;
 import org.hibersap.annotations.*;
 
 import java.util.List;
 
 @Bapi("BBP_VENDOR_GETLIST")
-public class VendorListBapi {
+public class VendorListBapi extends SuperBapi {
 
 
     public VendorListBapi(String companyCode){

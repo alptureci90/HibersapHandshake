@@ -17,58 +17,51 @@ public class MainVendorAppTest {
     }
 
     public void postVendor(){
+        // TODO: NOT WORKING!
         Vendor vendor = new Vendor();
         vendor.setName("New Vendor");
         vendor.setVendor("Vendor10100008");
 
-        SessionManager sessionManager = SAPSessionManager.createSessionManager();
-        Session session = sessionManager.openSession();
+        //SessionManager sessionManager = SAPSessionManager.createSessionManager();
+        //Session session = sessionManager.openSession();
 
         try{
+
             VendorCreateBapi vendorCreate = new VendorCreateBapi();
-            session.execute(vendorCreate);
+            SAPSessionManager.executeSession(vendorCreate);
             showVendorCreateOutput(vendorCreate);
 
         } catch (Exception e){
             e.printStackTrace();
-        } finally {
-            session.close();
         }
     }
 
     public void getVendorList(){
-        SessionManager sessionManager = SAPSessionManager.createSessionManager();
-        Session session = sessionManager.openSession();
-
+        VendorListBapi vendorList = new VendorListBapi("8800");
         try{
-            VendorListBapi vendorList = new VendorListBapi("0001");
-            session.execute(vendorList);
-            showVendorList(vendorList);
-        } finally {
-            session.close();
+            SAPSessionManager.executeSession(vendorList);
+        } catch (Exception e){
+
         }
+        showVendorList(vendorList);
     }
 
     public void getVendorDetail(){
-        SessionManager sessionManager = SAPSessionManager.createSessionManager();
-        Session session = sessionManager.openSession();
 
-        try{
             VendorDetailBapi vendorDetail = new VendorDetailBapi("0000100386", "0001");
-            session.execute(vendorDetail);
+
+            SAPSessionManager.executeSession(vendorDetail);
+
             showVendorDetail(vendorDetail);
-        } finally {
-            session.close();
-        }
 
     }
 
     public void showVendorDetail(VendorDetailBapi vendorDetail){
-
+        // TODO
     }
 
     public void showVendorList(VendorListBapi vendorList){
-
+        // TODO
     }
 
     public void showVendorCreateOutput(VendorCreateBapi newVendor){

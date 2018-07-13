@@ -1,6 +1,7 @@
 package hiberSAPExample.Vendor;
 
 
+import hiberSAPExample.Bapi.SuperBapi;
 import hiberSAPExample.utilities.BapiRet2;
 import org.hibersap.annotations.Bapi;
 import org.hibersap.annotations.Export;
@@ -8,7 +9,7 @@ import org.hibersap.annotations.Parameter;
 import org.hibersap.annotations.ParameterType;
 
 @Bapi("BAPI_VENDOR_GETDETAIL")
-public class VendorCreateBapi {
+public class VendorCreateBapi extends SuperBapi {
 
     @Export
     @Parameter(value="RETURN", type = ParameterType.STRUCTURE)

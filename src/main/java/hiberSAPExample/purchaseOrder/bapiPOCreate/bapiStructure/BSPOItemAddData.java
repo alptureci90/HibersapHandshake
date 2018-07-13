@@ -1,10 +1,9 @@
-package hiberSAPExample.purchaseOrder.bapiStructure;
+package hiberSAPExample.purchaseOrder.bapiPOCreate.bapiStructure;
 
 import org.hibersap.annotations.BapiStructure;
 import org.hibersap.annotations.Parameter;
 
 import java.math.BigDecimal;
-import java.util.Date;
 
 /**
  * PO_ITEM_ADD_DATA STRUCTURE  BAPIEKPOA OPTIONAL

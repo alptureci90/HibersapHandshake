@@ -1,6 +1,7 @@
 package hiberSAPExample.Invoice;
 
 
+import hiberSAPExample.Bapi.SuperBapi;
 import hiberSAPExample.Invoice.bapiStructure.*;
 import hiberSAPExample.utilities.BSBapiParex;
 import hiberSAPExample.utilities.BSAddress;
@@ -10,7 +11,7 @@ import org.hibersap.annotations.*;
 import java.util.List;
 
 @Bapi("BAPI_INCOMINGINVOICE_CREATE")
-public class IncomingInvoiceCreate {
+public class IncomingInvoiceCreate extends SuperBapi {
 
     //===IMPORT===/
     @Import
@@ -81,7 +82,7 @@ public class IncomingInvoiceCreate {
         return incomingInvoice;
     }
 
-    public void setIncommingInvoice( BSIncomingInvoiceHeaderData incomingInvoice) {
+    public void setIncomingInvoice( BSIncomingInvoiceHeaderData incomingInvoice) {
         this.incomingInvoice = incomingInvoice;
     }
 

@@ -1,7 +1,7 @@
-package hiberSAPExample.purchaseOrder;
+package hiberSAPExample.purchaseOrder.bapiPOCreate;
 
-import hiberSAPExample.purchaseOrder.bapiStructure.*;
-import hiberSAPExample.utilities.BSAddress;
+import hiberSAPExample.Bapi.SuperBapi;
+import hiberSAPExample.purchaseOrder.bapiPOCreate.bapiStructure.*;
 import hiberSAPExample.utilities.BSBapiParex;
 import hiberSAPExample.utilities.BapiRet2;
 import org.hibersap.annotations.*;
@@ -9,7 +9,7 @@ import org.hibersap.annotations.*;
 import java.util.List;
 
 @Bapi("BAPI_PO_CREATE")
-public class PurchaseOrderCreate {
+public class PurchaseOrderCreate extends SuperBapi {
 
     // ===IMPORT=== //
     @Import

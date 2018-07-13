@@ -1,11 +1,12 @@
 package hiberSAPExample.Vendor;
 
+import hiberSAPExample.Bapi.SuperBapi;
 import hiberSAPExample.utilities.BapiRet2;
 import org.hibersap.annotations.*;
 
 
 @Bapi("BAPI_VENDOR_GETDETAIL")
-public class VendorDetailBapi {
+public class VendorDetailBapi extends SuperBapi {
 
     @Import
     @Parameter("VENDORNO")

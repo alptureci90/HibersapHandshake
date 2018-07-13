@@ -1,7 +1,6 @@
-package hiberSAPExample.purchaseOrder;
+package hiberSAPExample.purchaseOrder.bapiPOCreate;
 
-import com.sap.conn.jco.JCoException;
-import hiberSAPExample.purchaseOrder.bapiStructure.*;
+import hiberSAPExample.purchaseOrder.bapiPOCreate.bapiStructure.*;
 import hiberSAPExample.sapSessionManager.SAPSessionManager;
 import org.hibersap.session.Session;
 import org.hibersap.session.SessionManager;
@@ -10,6 +9,12 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+
+/**
+ * DON'T USE THIS = OBSELETE!!!!
+ * @link: /bapiPOCreate1.MainPOAppTest.java
+ *
+ */
 
 public class POMainAppTest {
 
@@ -84,11 +89,6 @@ public class POMainAppTest {
         itemAccountAssignmentList.add(itemAccountAssignment);
 
 
-
-
-        SessionManager sessionManager = SAPSessionManager.createSessionManager();
-        Session session = sessionManager.openSession();
-
         try {
 
            PurchaseOrderCreate poCreate = new PurchaseOrderCreate();
@@ -97,15 +97,11 @@ public class POMainAppTest {
            poCreate.setBspoItems(itemsList);
            poCreate.setBspoItemAccountAssignment(itemAccountAssignmentList);
 
-           session.execute(poCreate);
-           showCreatePOResult(poCreate);
-
+           SAPSessionManager.executeSession(poCreate);
 
         } catch (Exception e){
+            System.out.println("Exception in BAPI_PO_CREATE execute statement!");
             e.printStackTrace();
-        } finally {
-            session.close();
-            sessionManager.close();
         }
 
     }

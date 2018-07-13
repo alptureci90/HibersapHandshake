@@ -1,4 +1,4 @@
-package hiberSAPExample.purchaseOrder.bapiStructure;
+package hiberSAPExample.purchaseOrder.bapiPOCreate.bapiStructure;
 
 import org.hibersap.annotations.BapiStructure;
 import org.hibersap.annotations.Parameter;
