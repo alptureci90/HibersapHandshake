@@ -1,7 +1,7 @@
-package hiberSAPExample.Invoice;
+package hiberSAPExample.invoice;
 
-import hiberSAPExample.Invoice.bapiStructure.BSInvoiceDetailHeader;
-import hiberSAPExample.Invoice.bapiStructure.BSItemData;
+import hiberSAPExample.invoice.bapiStructure.BSInvoiceDetailHeader;
+import hiberSAPExample.invoice.bapiStructure.BSItemData;
 import hiberSAPExample.utilities.BSAddress;
 import hiberSAPExample.utilities.BapiTaxData;
 import org.hibersap.annotations.*;

@@ -12,10 +12,10 @@
         </properties>
         <annotated-classes>
             <annotated-class>hiberSAPExample.Flight.FlightListBapi</annotated-class>
-            <annotated-class>hiberSAPExample.Vendor.VendorDetailBapi</annotated-class>
-            <annotated-class>hiberSAPExample.Vendor.VendorListBapi</annotated-class>
-            <annotated-class>hiberSAPExample.Invoice.InvoiceListBapi</annotated-class>
-            <annotated-class>hiberSAPExample.Invoice.InvoiceDetailBapi</annotated-class>
+            <annotated-class>hiberSAPExample.vendor.VendorDetailBapi</annotated-class>
+            <annotated-class>hiberSAPExample.vendor.VendorListBapi</annotated-class>
+            <annotated-class>hiberSAPExample.invoice.InvoiceListBapi</annotated-class>
+            <annotated-class>hiberSAPExample.invoice.InvoiceDetailBapi</annotated-class>
         </annotated-classes>
     </session-manager>
 </hibersap>

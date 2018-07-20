@@ -1,6 +1,6 @@
 package hiberSAPExample.purchaseOrder.bapiPOCreate1;
 
-import hiberSAPExample.Bapi.SuperBapi;
+import hiberSAPExample.superBapi.SuperBapi;
 import hiberSAPExample.purchaseOrder.bapiPOCreate1.bapiStructure.*;
 import hiberSAPExample.utilities.BapiRet2;
 import org.hibersap.annotations.*;

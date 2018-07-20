@@ -47,7 +47,7 @@ public class BSPOHeader {
     @Parameter("ITEM_INTVL")
     private String itemNumberInterval;
 
-    // Vendor Account Number
+    // vendor Account Number
     @Parameter("VENDOR")
     private String vendor;
 
@@ -135,7 +135,7 @@ public class BSPOHeader {
     @Parameter("REF_1")
     private String yourReference;
 
-    // Responsible Salesperson at Vendor's Office
+    // Responsible Salesperson at vendor's Office
     @Parameter("SALES_PERS")
     private String salesPerson;
 

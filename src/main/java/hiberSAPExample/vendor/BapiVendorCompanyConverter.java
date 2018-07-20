@@ -1,4 +1,4 @@
-package hiberSAPExample.Vendor;
+package hiberSAPExample.vendor;
 
 
 import org.hibersap.annotations.BapiStructure;

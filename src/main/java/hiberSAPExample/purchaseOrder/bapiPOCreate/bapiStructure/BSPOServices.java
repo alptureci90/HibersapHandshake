@@ -59,7 +59,7 @@ public class BSPOServices {
     @Parameter("SSC_ITEM")
     private String sscItem;
 
-    // Vendor's Service Number
+    // vendor's Service Number
     @Parameter("EXT_SERV")
     private String externalServiceNumber;
 

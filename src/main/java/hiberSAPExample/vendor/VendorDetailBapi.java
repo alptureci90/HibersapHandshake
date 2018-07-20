@@ -1,6 +1,6 @@
-package hiberSAPExample.Vendor;
+package hiberSAPExample.vendor;
 
-import hiberSAPExample.Bapi.SuperBapi;
+import hiberSAPExample.superBapi.SuperBapi;
 import hiberSAPExample.utilities.BapiRet2;
 import org.hibersap.annotations.*;
 

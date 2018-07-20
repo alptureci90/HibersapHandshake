@@ -1,4 +1,4 @@
-package hiberSAPExample.Invoice.bapiStructure;
+package hiberSAPExample.invoice.bapiStructure;
 
 import org.hibersap.annotations.BapiStructure;
 import org.hibersap.annotations.Parameter;
@@ -9,7 +9,7 @@ import java.util.Date;
 @BapiStructure
 public class BSItemData {
 
-    //Document Item in Invoice Document
+    //Document Item in invoice Document
     @Parameter("INVOICE_DOC_ITEM")
     private String invoiceDocItem;
 
@@ -93,7 +93,7 @@ public class BSItemData {
     @Parameter("ITEM_TEXT")
     private String itemText;
 
-    //Final Invoice Indicator
+    //Final invoice Indicator
     @Parameter("FINAL_INV")
     private String finalInvoiceIndicator;
 
@@ -105,7 +105,7 @@ public class BSItemData {
     @Parameter("GRIR_CLEAR_SRV")
     private String clearingIndicatorForGR_IRPostingForExternalServices;
 
-    //Account Number of Vendor or Creditor
+    //Account Number of vendor or Creditor
     @Parameter("FREIGHT_VEN")
     private String accNumOfVendOrCreditor;
 

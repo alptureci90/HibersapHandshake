@@ -64,11 +64,11 @@ public class BSPOHeaderAddData {
     @Parameter("REF_1")
     private String ref1;
 
-    // Responsible Salesperson at Vendor's Office
+    // Responsible Salesperson at vendor's Office
     @Parameter("SALES_PERS")
     private String salesPers;
 
-    // Vendor's Telephone Number
+    // vendor's Telephone Number
     @Parameter("TELEPHONE")
     private String telephone;
 

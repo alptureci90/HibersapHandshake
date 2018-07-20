@@ -1,4 +1,4 @@
-package hiberSAPExample.Bapi;
+package hiberSAPExample.superBapi;
 
 public interface SuperBapiInterface {
 }

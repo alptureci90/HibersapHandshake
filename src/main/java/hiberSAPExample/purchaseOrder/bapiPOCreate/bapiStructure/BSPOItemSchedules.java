@@ -69,7 +69,7 @@ public class BSPOItemSchedules {
     @Parameter("BATCH")
     private String batch;
 
-    // Vendor Batch Number
+    // vendor Batch Number
     @Parameter("VEND_BATCH")
     private String vendBatch;
 

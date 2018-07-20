@@ -1,11 +1,7 @@
-package hiberSAPExample.Vendor;
+package hiberSAPExample.vendor;
 
 import org.hibersap.annotations.BapiStructure;
-import org.hibersap.annotations.Convert;
 import org.hibersap.annotations.Parameter;
-import org.hibersap.conversion.CharConverter;
-
-import java.util.Date;
 
 @BapiStructure
 public class BapiVendorConverter {

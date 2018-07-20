@@ -1,7 +1,7 @@
-package hiberSAPExample.Vendor;
+package hiberSAPExample.vendor;
 
 
-import hiberSAPExample.Bapi.SuperBapi;
+import hiberSAPExample.superBapi.SuperBapi;
 import hiberSAPExample.utilities.BapiRet2;
 import org.hibersap.annotations.Bapi;
 import org.hibersap.annotations.Export;
@@ -54,10 +54,10 @@ public class VendorCreateBapi extends SuperBapi {
 
         StringBuffer sb = new StringBuffer();
 
-        sb.append("Vendor Create Result: ");
+        sb.append("vendor Create Result: ");
         sb.append(getReturnData().toString());
-        sb.append("\nNew Vendor No: " + getVendorNo());
-        sb.append("\nNew Vendor Name:" + getVendor());
+        sb.append("\nNew vendor No: " + getVendorNo());
+        sb.append("\nNew vendor Name:" + getVendor());
 
         return sb.toString();
     }

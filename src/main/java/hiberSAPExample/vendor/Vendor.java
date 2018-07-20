@@ -1,10 +1,7 @@
-package hiberSAPExample.Vendor;
+package hiberSAPExample.vendor;
 
-import java.util.Date;
-import org.hibersap.*;
 import org.hibersap.annotations.BapiStructure;
 import org.hibersap.annotations.Parameter;
-import org.hibersap.util.DateUtil;
 
 @BapiStructure
 public class Vendor {

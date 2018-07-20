@@ -1,9 +1,6 @@
-package hiberSAPExample.Vendor;
+package hiberSAPExample.vendor;
 
-import com.sap.conn.jco.JCoException;
 import hiberSAPExample.sapSessionManager.*;
-import org.hibersap.session.Session;
-import org.hibersap.session.SessionManager;
 
 public class MainVendorAppTest {
 
@@ -19,7 +16,7 @@ public class MainVendorAppTest {
     public void postVendor(){
         // TODO: NOT WORKING!
         Vendor vendor = new Vendor();
-        vendor.setName("New Vendor");
+        vendor.setName("New vendor");
         vendor.setVendor("Vendor10100008");
 
         //SessionManager sessionManager = SAPSessionManager.createSessionManager();

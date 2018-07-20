@@ -1,4 +1,4 @@
-package hiberSAPExample.Invoice.bapiStructure;
+package hiberSAPExample.invoice.bapiStructure;
 
 import org.hibersap.annotations.BapiStructure;
 import org.hibersap.annotations.Parameter;

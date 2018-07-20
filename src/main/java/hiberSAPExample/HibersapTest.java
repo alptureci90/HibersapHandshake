@@ -2,7 +2,7 @@ package hiberSAPExample;
 
 import hiberSAPExample.Flight.Flight;
 import hiberSAPExample.Flight.FlightListBapi;
-import hiberSAPExample.Vendor.VendorDetailBapi;
+import hiberSAPExample.vendor.VendorDetailBapi;
 import hiberSAPExample.utilities.BapiRet2;
 import org.hibersap.configuration.AnnotationConfiguration;
 import org.hibersap.session.Session;

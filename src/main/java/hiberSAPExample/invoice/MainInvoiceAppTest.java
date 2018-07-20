@@ -1,7 +1,7 @@
-package hiberSAPExample.Invoice;
+package hiberSAPExample.invoice;
 
-import hiberSAPExample.Invoice.bapiStructure.BSIncomingInvoiceHeaderData;
-import hiberSAPExample.Invoice.bapiStructure.BSItemData;
+import hiberSAPExample.invoice.bapiStructure.BSIncomingInvoiceHeaderData;
+import hiberSAPExample.invoice.bapiStructure.BSItemData;
 import hiberSAPExample.sapSessionManager.SAPSessionManager;
 import hiberSAPExample.utilities.BapiRet2;
 import org.hibersap.session.Session;
@@ -68,7 +68,7 @@ public class MainInvoiceAppTest {
                 SAPSessionManager.executeSession(createIncomingInvoice);
 
             } catch (Exception e) {
-                System.out.println("Exception in session.Execute for BAPI_INCOMINGINVOICE_CREATE = IncomingInvoiceCreate.java");
+                System.out.println("Exception in session.Execute for BAPI_INCOMINGINVOICE_CREATE => IncomingInvoiceCreate.java");
                 e.printStackTrace();
             }
 
@@ -77,8 +77,8 @@ public class MainInvoiceAppTest {
     }
 
     public void showCreateResult(IncomingInvoiceCreate createdInvoice){
-        System.out.println("Created Incoming Invoice Document Number:\t" + createdInvoice.getInvoiceDocNumber());
-        System.out.println("Created Incoming Invoice Fiscal Year:\t" + createdInvoice.getFiscalYear());
+        System.out.println("Created Incoming invoice Document Number:\t" + createdInvoice.getInvoiceDocNumber());
+        System.out.println("Created Incoming invoice Fiscal Year:\t" + createdInvoice.getFiscalYear());
         List<BapiRet2> result = createdInvoice.getBapiRet2();
         System.out.println(result.toString());
     }
@@ -122,7 +122,7 @@ public class MainInvoiceAppTest {
             bsItemData.setPoUnitOfMeasure(itemData.getUnitofMeasure());
 
         } catch (Exception e){
-            System.out.println("Exception in mapping Incoming Invoice Item Data!");
+            System.out.println("Exception in mapping Incoming invoice Item Data!");
             e.printStackTrace();
         }
         return bsItemData;

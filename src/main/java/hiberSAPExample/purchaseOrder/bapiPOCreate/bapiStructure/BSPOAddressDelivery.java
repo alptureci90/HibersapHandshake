@@ -222,7 +222,7 @@ public class BSPOAddressDelivery {
     @Parameter("REGIOGROUP")
     private String regionalGroup;
 
-    // Vendor to be supplied/who is to receive delivery
+    // vendor to be supplied/who is to receive delivery
     @Parameter("SUPP_VENDOR")
     private String vendor;
 

@@ -1,7 +1,6 @@
 package hiberSAPExample.sapSessionManager;
 
-import hiberSAPExample.Bapi.SuperBapi;
-import hiberSAPExample.Bapi.SuperBapiInterface;
+import hiberSAPExample.superBapi.SuperBapi;
 import org.hibersap.configuration.AnnotationConfiguration;
 import org.hibersap.session.Session;
 import org.hibersap.session.SessionManager;
@@ -25,8 +24,11 @@ public abstract class SAPSessionManager implements SessionManager {
             session.execute(bapiToExecute);
             transaction.commit();
         } catch (Exception e){
-            System.out.println("Exception in session.execute for Bapi call:\t" + bapiToExecute.getClass().getName());
+            System.out.println("Exception in session.execute for superBapi call:\t" + bapiToExecute.getClass().getName());
             e.printStackTrace();
+            transaction.rollback();
+            System.out.println("Transaction Rolled Back!");
+
         } finally {
             session.close();
             sessionManager.close();

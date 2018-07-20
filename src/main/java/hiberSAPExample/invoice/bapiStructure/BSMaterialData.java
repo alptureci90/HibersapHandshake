@@ -1,4 +1,4 @@
-package hiberSAPExample.Invoice.bapiStructure;
+package hiberSAPExample.invoice.bapiStructure;
 
 import org.hibersap.annotations.Parameter;
 
@@ -9,7 +9,7 @@ import java.math.BigDecimal;
  */
 public class BSMaterialData {
 
-    //Doc item in Invoice
+    //Doc item in invoice
     @Parameter("INVOICE_DOC_ITEM")
     private int invoiceDocItem;
 

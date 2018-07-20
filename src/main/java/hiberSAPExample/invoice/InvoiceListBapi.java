@@ -1,7 +1,7 @@
-package hiberSAPExample.Invoice;
+package hiberSAPExample.invoice;
 
 
-import hiberSAPExample.Invoice.bapiStructure.BSInvoiceListHeader;
+import hiberSAPExample.invoice.bapiStructure.BSInvoiceListHeader;
 import org.hibersap.annotations.Bapi;
 import org.hibersap.annotations.Import;
 import org.hibersap.annotations.Parameter;
@@ -27,7 +27,7 @@ public class InvoiceListBapi {
 
    /* @Table
     @Parameter("VENDOR_RA")
-    private List<Vendor> vendorList;
+    private List<vendor> vendorList;
 
     @Table
     @Parameter("PSTNGDATE_RA")
@@ -69,7 +69,7 @@ public class InvoiceListBapi {
         return erpDocuments;
     }
 
-    /*public List<Vendor> getVendorList() {
+    /*public List<vendor> getVendorList() {
         return vendorList;
     }
 

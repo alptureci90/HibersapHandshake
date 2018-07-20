@@ -18,7 +18,7 @@ public class BSPOBusinessPartner {
     @Parameter("LANGU")
     private String language;
 
-    // Number of a Business Partner in Vendor Master Record
+    // Number of a Business Partner in vendor Master Record
     @Parameter("BUSPARTNO")
     private String businessPartnerNumber;
 

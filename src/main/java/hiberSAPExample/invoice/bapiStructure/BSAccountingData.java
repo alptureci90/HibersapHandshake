@@ -1,4 +1,4 @@
-package hiberSAPExample.Invoice.bapiStructure;
+package hiberSAPExample.invoice.bapiStructure;
 
 import org.hibersap.annotations.BapiStructure;
 import org.hibersap.annotations.Parameter;
@@ -12,7 +12,7 @@ import java.util.Date;
 @BapiStructure
 public class BSAccountingData {
 
-    //Doc item in Invoice
+    //Doc item in invoice
     @Parameter("INVOICE_DOC_ITEM")
     private int invoiceDocItem;
 

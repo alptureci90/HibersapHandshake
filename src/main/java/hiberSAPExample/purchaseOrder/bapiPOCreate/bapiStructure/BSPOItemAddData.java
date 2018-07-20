@@ -48,7 +48,7 @@ public class BSPOItemAddData {
     @Parameter("GR_NON_VAL")
     private String grNonVal;
 
-    // Invoice receipt indicator
+    // invoice receipt indicator
     @Parameter("IR_IND")
     private String irInd;
 
@@ -56,7 +56,7 @@ public class BSPOItemAddData {
     @Parameter("DEL_COMPL")
     private String deliveryCompleted;
 
-    // Final Invoice Indicator
+    // Final invoice Indicator
     @Parameter("FINAL_INV")
     private String finalInv;
 

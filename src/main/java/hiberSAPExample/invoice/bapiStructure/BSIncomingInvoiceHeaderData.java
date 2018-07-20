@@ -1,4 +1,4 @@
-package hiberSAPExample.Invoice.bapiStructure;
+package hiberSAPExample.invoice.bapiStructure;
 
 
 import org.hibersap.annotations.BapiStructure;
@@ -29,7 +29,7 @@ public class BSIncomingInvoiceHeaderData {
     }
 
     /**
-     * Indicator: Post Invoice
+     * Indicator: Post invoice
      */
     @Parameter("INVOICE_IND")
     private String invoiceInd;
@@ -96,7 +96,7 @@ public class BSIncomingInvoiceHeaderData {
     private BigDecimal exchRateV;
 
     /**
-     * Gross Invoice Amount in Document Currency
+     * Gross invoice Amount in Document Currency
      */
     @Parameter("GROSS_AMOUNT")
     private BigDecimal grossAmount;
@@ -150,7 +150,7 @@ public class BSIncomingInvoiceHeaderData {
     private BigDecimal dsctPct2;
 
     /**
-     * Origin of a Logistics Invoice Verification Document
+     * Origin of a Logistics invoice Verification Document
      */
     @Parameter("IV_CATEGORY")
     private String ivCategory;
@@ -204,7 +204,7 @@ public class BSIncomingInvoiceHeaderData {
     private String pmtMthSup;
 
     /**
-     * Document Number of an Invoice Document
+     * Document Number of an invoice Document
      */
     @Parameter("INV_DOC_NO")
     private String invDocNo;
@@ -291,19 +291,19 @@ public class BSIncomingInvoiceHeaderData {
     private String paymtRef;
 
     /**
-     * Invoice Reference: Document Number for Invoice Reference
+     * invoice Reference: Document Number for invoice Reference
      */
     @Parameter("INV_REF_NO")
     private String invRefNo;
 
     /**
-     * Fiscal Year of the relevant Invoice (for Credit Memo)
+     * Fiscal Year of the relevant invoice (for Credit Memo)
      */
     @Parameter("INV_YEAR")
     private String invYear;
 
     /**
-     * Invoice Receipt Date
+     * invoice Receipt Date
      */
     @Parameter("INV_REC_DATE")
     private Date invRecDate;
@@ -393,13 +393,13 @@ public class BSIncomingInvoiceHeaderData {
     private Date retDueProp;
 
     /**
-     * Posting Logic for Delivery Items (Invoice/ Credit memo)
+     * Posting Logic for Delivery Items (invoice/ Credit memo)
      */
     @Parameter("DELIV_POSTING")
     private String delivPosting;
 
     /**
-     * Posting Logic for return Items( Invoice / Credit memo)
+     * Posting Logic for return Items( invoice / Credit memo)
      */
     @Parameter("RETURN_POSTING")
     private String returnPosting;

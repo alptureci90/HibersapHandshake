@@ -1,9 +1,7 @@
-package hiberSAPExample.Invoice;
+package hiberSAPExample.vendor;
 
 /**
- This package utilizes BAPI_VENDOR_GETDETAIL Bapi from R3.
-
-
+ This package utilizes BAPI_VENDOR_GETDETAIL superBapi from R3.
  TODO: BANK ACCOUNT Information should also be acquired.
  i.e. BapiVendorBankAccountConverter
 

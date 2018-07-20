@@ -1,8 +1,8 @@
-package hiberSAPExample.Invoice;
+package hiberSAPExample.invoice;
 
 
-import hiberSAPExample.Bapi.SuperBapi;
-import hiberSAPExample.Invoice.bapiStructure.*;
+import hiberSAPExample.superBapi.SuperBapi;
+import hiberSAPExample.invoice.bapiStructure.*;
 import hiberSAPExample.utilities.BSBapiParex;
 import hiberSAPExample.utilities.BSAddress;
 import hiberSAPExample.utilities.BapiRet2;
